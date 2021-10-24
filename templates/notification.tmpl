@@ -81,7 +81,7 @@
 		<a href="/user/{{.Account.ID}}">
 			<span class="status-uname"> @{{.Account.Acct}} </span>
 		</a>
-		<span class="notification-text"> retweeted your post - 
+		<span class="notification-text"> boosted your post -
 			<time datetime="{{FormatTimeRFC3339 .CreatedAt}}" title="{{FormatTimeRFC822 .CreatedAt}}">{{TimeSince .CreatedAt}}</time> 
 		</span>
 	</div>

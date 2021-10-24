@@ -9,7 +9,7 @@
 		<a href="/user/{{.Account.ID}}"> 
 			<span class="status-uname"> @{{.Account.Acct}} </span> 
 		</a>
-		retweeted
+		boosted
 	</div>
 	{{template "status" (WithContext .Reblog $.Ctx)}}
 	{{else}}
