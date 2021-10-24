@@ -1,0 +1,23 @@
+{{with .Data}}
+{{template "header.tmpl" (WithContext .CommonData $.Ctx)}}
+<div class="page-title"> bloatest </div>
+<div class="signin-desc">
+	A web client for <a href="https://joinmastodon.org" target="_blank">Mastodon Network</a>.
+</div>
+
+<form class="signin-form" action="/signin" method="post">
+	Enter the domain name of your instance to continue
+	<br/>
+	<input type="text" name="instance" placeholder="example.com" required>
+	<br/>
+	<button type="submit"> Signin </button>
+</form>
+
+<p>
+	See
+	<a href="https://github.com/koyuspace/bloatest" target="_blank">https://github.com/koyuspace/bloatest</a>
+	for more details.
+</P>
+
+{{template "footer.tmpl"}}
+{{end}}
