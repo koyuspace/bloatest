@@ -196,7 +196,7 @@
 					</a>
 				</div>
 				<div class="status-action">
-					{{$rt := "retweet"}} {{if .Reblogged}} {{$rt = "unretweet"}} {{end}}
+					{{$rt := "boost"}} {{if .Reblogged}} {{$rt = "unboost"}} {{end}}
 					<form class="status-retweet" data-action="{{$rt}}" action="/{{$rt}}/{{.ID}}" method="post" target="_self">
 						<input type="hidden" name="csrf_token" value="{{$.Ctx.CSRFToken}}">
 						<input type="hidden" name="referrer" value="{{$.Ctx.Referrer}}">
