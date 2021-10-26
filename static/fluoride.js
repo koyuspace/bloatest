@@ -3,8 +3,8 @@
 var reverseActions = {
 	"like": "unlike",
 	"unlike": "like",
-	"retweet": "unretweet",
-	"unretweet": "retweet"
+	"boost": "unboost",
+	"unboost": "boost"
 };
 
 var csrfToken = "";
