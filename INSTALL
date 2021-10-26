@@ -2,9 +2,7 @@ Installation
 
 1. Get the source
 Get the source code by running
-$ git clone https://git.freesoftwareextremist.com/bloatest
-You can also download the latest source tarball from the URL
-"https://git.freesoftwareextremist.com/bloatest/snapshot/bloatest-master.tar.gz"
+$ git clone https://github.com/koyuspace/bloatest
 
 2. Build and install
 Install GO from your system's package manager or from https://golang.org/dl.

@@ -16,7 +16,7 @@ Typing make will build the binary
 $ make
 
 Edit the provided config file. See the bloatest.conf file for more details.  
-$ ed bloatest.conf
+$ vi bloatest.conf
 
 Run the binary
 $ ./bloatest -f bloatest.conf
