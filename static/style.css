@@ -576,7 +576,7 @@ kbd {
 }
 
 .dark {
-	background-color: #222222;
+	background-color: #223;
 	background-image: none;
 	color: #eaeaea;
 }
@@ -586,19 +586,19 @@ kbd {
 }
 
 .dark textarea {
-	background-color: #333333;
-	border: 1px solid #444444;
+	background-color: #334;
+	border: 1px solid #445;
 	color: #eaeaea;
 }
 
 .dark #reply-popup,
 .dark #reply-to-popup {
-	background-color: #222222;
-	border-color: #444444;
+	background-color: #223;
+	border-color: #445;
 }
 
 .dark .status-container-container.highlight {
-	background-color: #333333;
+	background-color: #334;
 }
 
 .dark .btn-link {
@@ -615,12 +615,12 @@ kbd {
 }
 
 .dark .more-content {
-	background-color: #222222;
-	border-color: #444444;
+	background-color: #223;
+	border-color: #445;
 }
 
 .dark kbd {
-	background-color: #333333;
-	border-color: #444444;
+	background-color: #334;
+	border-color: #445;
 	color: #eaeaea;
 }
