@@ -624,3 +624,11 @@ kbd {
 	border-color: #445;
 	color: #eaeaea;
 }
+
+* {
+	border: 0 !important;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
