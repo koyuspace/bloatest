@@ -655,8 +655,8 @@ func NewHandler(s *service, logger *log.Logger, staticDir string) http.Handler {
 	r.HandleFunc("/post", post).Methods(http.MethodPost)
 	r.HandleFunc("/like/{id}", like).Methods(http.MethodPost)
 	r.HandleFunc("/unlike/{id}", unlike).Methods(http.MethodPost)
-	r.HandleFunc("/retweet/{id}", retweet).Methods(http.MethodPost)
-	r.HandleFunc("/unretweet/{id}", unretweet).Methods(http.MethodPost)
+	r.HandleFunc("/boost/{id}", retweet).Methods(http.MethodPost)
+	r.HandleFunc("/unboost/{id}", unretweet).Methods(http.MethodPost)
 	r.HandleFunc("/vote/{id}", vote).Methods(http.MethodPost)
 	r.HandleFunc("/follow/{id}", follow).Methods(http.MethodPost)
 	r.HandleFunc("/unfollow/{id}", unfollow).Methods(http.MethodPost)
@@ -680,8 +680,8 @@ func NewHandler(s *service, logger *log.Logger, staticDir string) http.Handler {
 	r.HandleFunc("/signout", signout).Methods(http.MethodPost)
 	r.HandleFunc("/fluoride/like/{id}", fLike).Methods(http.MethodPost)
 	r.HandleFunc("/fluoride/unlike/{id}", fUnlike).Methods(http.MethodPost)
-	r.HandleFunc("/fluoride/retweet/{id}", fRetweet).Methods(http.MethodPost)
-	r.HandleFunc("/fluoride/unretweet/{id}", fUnretweet).Methods(http.MethodPost)
+	r.HandleFunc("/fluoride/boost/{id}", fRetweet).Methods(http.MethodPost)
+	r.HandleFunc("/fluoride/unboost/{id}", fUnretweet).Methods(http.MethodPost)
 	r.PathPrefix("/static").Handler(http.StripPrefix("/static",
 		http.FileServer(http.Dir(staticDir))))
 
